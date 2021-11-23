@@ -27,6 +27,7 @@ public class OrderController {
     @PostMapping("/test")
     public MyResult<Payment> create(@RequestBody Payment payment) {
         System.out.println("aaaaaaaaaaaaaabbb");
+        System.out.println("ccccc");
         return restTemplate.postForObject(url + "/payment/create", payment, MyResult.class);
     }
 }
